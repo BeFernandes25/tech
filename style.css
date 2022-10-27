@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .cabecalho{
     padding: 30px 90px;
@@ -63,4 +64,33 @@ button{
 }
 .sobre, .contato{
     color: aliceblue;
+}
+@media screen and (max-width:700px){
+    .cabecalho{
+        position: inherit;
+    }
+    .imagem{
+        position: inherit;
+        margin: 20px;
+    }
+    .imagem img{
+        width: 60vw;
+        height: auto;
+    }
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .lateral{
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+    .botao{
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
 }
